@@ -1,0 +1,137 @@
+/* 定义变量 */
+html{
+	--BackGroundColor:#b3b3b3;
+	--WhiteShadow:-5px -5px 15px #bfbfbf;
+	--BlackShadow:5px 5px 15px #9f9f9f;
+	--TagFatherWhiteShadow:-5px -5px 15px #d3d3d3;
+	--TagFatherBlackShadow:5px 5px 15px #a2a2a2;
+	--FontColor:#F1F1F1;
+}
+*{padding: 0;margin: 0;}
+
+
+body{
+	height: 100%;
+	width: 100%;
+	background-color: #b3b3b3;
+	background-size: 100%;
+}
+/* 左侧书签栏 */
+.leftTagPage{
+	height: 100%;
+	width: 10%;
+	overflow:hidden;
+	background: #bfbfbf;
+	box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, .3);
+	position: absolute;
+}
+.leftTagPage>ul>li{
+	/* height: 40px; */
+	width: 80%;
+	text-align: center;
+	border-radius: 10px;
+	margin: 10px auto;
+	list-style: none;
+	box-shadow: var(--TagFatherBlackShadow),
+				var(--TagFatherWhiteShadow);
+}
+.leftTagPage>ul>li>a{
+	display: block;
+	line-height: 40px;
+	color: var(--FontColor);
+	text-decoration: none;
+}
+.leftTagPage>ul>li>ul{
+	display: none;
+	list-style: none;
+}
+.leftTagPage>ul>li:hover ul{
+	display: block;
+}
+.leftTagPage>ul>li>ul>li{
+	height: 40px;
+	width: 90%;
+	border-radius: 10px;
+	margin: 10px auto;
+}
+.leftTagPage>ul>li>ul>li:hover{
+	box-shadow: inset var(--TagFatherBlackShadow),
+				inset var(--TagFatherWhiteShadow);
+}
+.leftTagPage>ul>li>ul>li>a{
+	display: block;
+	text-decoration: none;
+	line-height: 40px;
+	color: var(--FontColor);
+}
+
+
+
+/* 搜索框 */
+.SearchBox{
+	width: 500px;
+	padding-top: 15%;
+	margin: 0px auto 0px;
+	text-align: center;
+}
+#searchbox{
+	outline-style: none;
+	border: 0px;
+	border-radius: 20px;
+	padding: 7px 20px;
+	width: 400px;
+	font-size: 25px;
+	font-family: "隶书";
+	color: var(--FontColor);
+	background-color: var(--BackGroundColor);
+	box-shadow: var(--BlackShadow),
+				var(--WhiteShadow);
+}
+#searchbox:focus{
+	border-color: #66afe7;
+	outline: 0;
+	-webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow: inset var(--BlackShadow),
+				inset var(--WhiteShadow);
+}
+/* 搜索引擎选择 */
+#navOption{
+	text-align: center;
+	margin: 0px auto;
+	width: 400px;
+}
+.nav{
+	margin: 30px 10px;
+	box-shadow: var(--BlackShadow),
+				var(--WhiteShadow);
+}
+.nav:focus{
+	box-shadow: inset var(--BlackShadow),
+				inset var(--WhiteShadow);
+}
+#baidu{
+	background: url(../img/baidu-default.png) no-repeat center center;
+	width: 40px;
+	height: 40px;
+	border: #F1F1F1;
+	border-radius: 20px;
+}
+#bing{
+	background: url(../img/bing-default.png) no-repeat center center;
+	width: 40px;
+	height: 40px;
+	border: #F1F1F1;
+	border-radius: 20px;
+}
+#s360{
+	background: url(../img/360-default.png) no-repeat center center;
+	width: 40px;height: 40px;
+	border: #F1F1F1;
+	border-radius: 20px;
+}
+#google{
+	background: url(../img/google-default.png) no-repeat center center;
+	width: 40px;height: 40px;
+	border: #F1F1F1;
+	border-radius: 20px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/index.js">
+		</script>
+		<title>Tom's Navigate Page</title>
+	</head>
+	<body>
+		<div class="leftTagPage">
+			<ul>
+				<li><a href="#">学习</a>
+					<ul>
+						<li><a href="http://jwx.hbzy.edu.cn/eams/homeExt.action;jsessionid=7B89F42F62065428C6C74C72BF0ED3B2?t_s=1626937691693&amp_sec_version_=1&gid_=TGYwcGRPa2Z4OWhVNXNRbXJqdUFBOUhiT2xHTXZWNTlDcENpdXBjOVlXelNCZTFkT20yWkZYeElyL0NSMGg1V0cvYjJUeXdDOFZUS2FFcVhaK3o4T1E9PQ&EMAP_LANG=zh&THEME=cherry" target="_blank">教务系统</a></li>
+						<li><a href="https://learn.unity.com/" target="_blank">Unity Learn</a></li>
+						<li><a href="https://www.icve.com.cn/" target="_blank">智慧职教</a></li>
+						<li><a href="https://www.bootcss.com/" target="_blank">bootstarp中文</a></li>
+					</ul>
+				</li>
+				<li><a href="#">娱乐</a>
+					<ul>
+						<li><a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a></li>
+						<li><a href="https://www.qidian.com/" target="_blank">起点小说</a></li>
+						<li><a href="https://www.3dmgame.com/" target="_blank">3大妈</a></li>
+						<li><a href="https://user.qzone.qq.com/2270460825/infocenter?via=toolbar" target="_blank">QQ空间</a></li>
+					</ul>
+				</li>
+				<li><a href="#">工具</a>
+					<ul>
+						<li><a href="https://image.baidu.com/" target="_blank">百度搜图</a></li>
+						<li><a href="https://mail.qq.com/cgi-bin/frame_html?sid=_mPMvsXTPGh6nhl4&r=1a746c7bda2ecbef718db644ac5f54b2" target="_blank">qq邮箱</a></li>
+					</ul>
+				</li>
+				<li><a href="#">生活</a>
+					<ul>
+						<li><a href="https://www.taobao.com/" target="_blank">淘宝</a></li>
+					</ul>
+				</li>
+				<li><a href="#">奇怪的生成器</a>
+					<ul>
+						<li><a href="https://saythemoney.github.io/#" target="_blank">支付宝到账生成器</a></li>
+						<li><a href="https://www.thiswaifudoesnotexist.net/" target="_blank">动漫少女生成器</a></li>
+						<li><a href="https://make.girls.moe/#/" target="_blank">动漫女角色生成器</a></li>
+						<li><a href="https://cts.chazhi.net/" target="_blank">藏头诗生成器</a></li>
+						<li><a href="https://pyq.shadiao.app/" target="_blank">朋友圈文案生成器</a></li>
+						<li><a href="https://zuanbot.com/" target="_blank">脏话生成器</a></li>
+						<li><a href="http://www.yduanzi.com/?utm_source=shadiao.app" target="_blank">网易云段子</a></li>
+						<li><a href="https://we.dog/?utm_source=shadiao.app" target="_blank">舔狗日记</a></li>
+					</ul>
+				</li>
+				<li><a href="#">临时</a>
+					<ul>
+						
+					</ul>
+				</li>
+				<li>
+					<a href="#">+</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 搜索框，可大可小，可切换搜索引擎，可从文本文档中读取默认引擎 -->
+		<div class="SearchBox">
+			<form id="Search" action="https://www.bing.com/search" method="get" target="_blank">
+				<input id="searchbox" type="text" name="q" size="30" placeholder="BingSearch..." maxlength="255" autofocus=""/>
+				<input type="hidden" name="ie" value="utf-8" />
+			</form>
+			<!-- 选择搜索引擎	 -->
+			<div id="navOption">
+				<input type="button" onclick="document.getElementById('Search').action='https://www.baidu.com/s';document.getElementById('searchbox').name='wd';document.getElementById('searchbox').placeholder='BaiduSearch...'" class="nav" id="baidu"/>
+				<input type="button" onclick="document.getElementById('Search').action='https://www.bing.com/search';document.getElementById('searchbox').name='q';document.getElementById('searchbox').placeholder='BingSearch...'" class="nav" id="bing"/>
+				<input type="button" onclick="document.getElementById('Search').action='https://www.so.com/s';document.getElementById('searchbox').name='q';document.getElementById('searchbox').placeholder='360Search...'" class="nav" id="s360"/>
+				<input type="button" onclick="document.getElementById('Search').action='https://www.google.com/search';document.getElementById('searchbox').name='q';document.getElementById('searchbox').placeholder='GoogleSearch...'" class="nav" id="google"/>
+			</div>
+		</div>
+	</body>
+</html>
